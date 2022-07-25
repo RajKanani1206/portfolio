@@ -1,0 +1,36 @@
+.menu-items {
+  font-family: "League Spartan";
+  color: #b0b2c3;
+}
+
+.menu-items:hover {
+  color: #b0b2c3;
+}
+
+.menu-button {
+  border: none;
+  color: #dbdce4;
+}
+
+.menu-button:focus,
+.offcanvas-header button:focus {
+  box-shadow: none;
+}
+
+.offcanvas-end {
+  width: 250px !important;
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .logo-img {
+    height: 45px;
+  }
+  .offcanvas-end {
+    background: linear-gradient(270deg, #235aa6, #101b3b);
+    border-left: none !important;
+  }
+}
