@@ -1,0 +1,24 @@
+.inner-banner {
+  background-image: url("../../../public/images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 35rem;
+}
+
+.inner-banner .banner-container,
+.inner-banner .banner-section {
+  min-height: inherit;
+}
+
+.banner-content h1 {
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-size: 4em;
+}
+
+.social-links li a img {
+  filter: invert(82%) sepia(6%) saturate(611%) hue-rotate(196deg) brightness(91%) contrast(80%);
+}
+
+.social-links li a img:hover {
+  filter: invert(87%) sepia(75%) saturate(5313%) hue-rotate(183deg) brightness(124%) contrast(100%);
+}
