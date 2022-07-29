@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 export default [
   {
     link: "https://github.com/RajKanani1206",
