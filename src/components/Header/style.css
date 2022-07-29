@@ -1,10 +1,25 @@
 .menu-items {
   font-family: "League Spartan";
   color: #b0b2c3;
+  position: relative;
 }
 
 .menu-items:hover {
-  color: #b0b2c3;
+  color: #fff;
+}
+
+.menu-items::after {
+  content: "";
+  position: absolute;
+  background-color: #235aa6;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+.menu-items:hover::after {
+  width: 100%;
 }
 
 .menu-button {

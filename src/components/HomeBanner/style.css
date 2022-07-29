@@ -1,13 +1,21 @@
 .inner-banner {
-  background-image: url("../../../public/images/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 35rem;
+  min-height: 500px;
+}
+
+.banner-img {
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  opacity: 0.6;
 }
 
 .inner-banner .banner-container,
 .inner-banner .banner-section {
   min-height: inherit;
+}
+
+.banner-container {
+  position: relative;
 }
 
 .banner-content h1 {
@@ -21,4 +29,24 @@
 
 .social-links li a img:hover {
   filter: invert(87%) sepia(75%) saturate(5313%) hue-rotate(183deg) brightness(124%) contrast(100%);
+}
+
+/* Media Queries */
+
+@media (min-width: 389px) {
+  .banner-img {
+    top: 38%;
+    left: 34%;
+  }
+}
+@media (min-width: 576px) {
+  .banner-img {
+    left: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .banner-img {
+    top: 40%;
+    left: 40%;
+  }
 }
