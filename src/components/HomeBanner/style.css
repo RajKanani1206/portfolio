@@ -44,7 +44,7 @@
     left: 50%;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .banner-img {
     top: 40%;
     left: 40%;
