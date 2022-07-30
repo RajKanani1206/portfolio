@@ -48,4 +48,7 @@
     background: linear-gradient(270deg, #235aa6, #101b3b);
     border-left: none !important;
   }
+  .menu-items::after {
+    height: 0;
+  }
 }
