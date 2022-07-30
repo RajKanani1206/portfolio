@@ -35,7 +35,7 @@
 
 @media (min-width: 389px) {
   .banner-img {
-    top: 38%;
+    top: 35%;
     left: 34%;
   }
 }
@@ -46,7 +46,6 @@
 }
 @media (min-width: 768px) {
   .banner-img {
-    top: 40%;
     left: 40%;
   }
 }
