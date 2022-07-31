@@ -5,9 +5,9 @@ import "./style.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main-banner">
       <img src="images/logo.svg" alt="Logo" className="banner-img" />
-      <div className="inner-banner">
+      <div className="inner-banner min-vh-100">
         <Container className="banner-container">
           <div className="d-flex justify-content-between align-items-center banner-section">
             <div className="banner-content">
