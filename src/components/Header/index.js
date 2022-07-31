@@ -8,7 +8,7 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <Navbar expand="md" variant="dark">
+    <Navbar expand="md" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand className="d-flex align-items-center">
           <img alt="Logo" src="images/logo-white.svg" width="60" height="60" className="d-inline-block logo-img" />
@@ -21,8 +21,9 @@ const Header = () => {
           scroll={true}
           show={show}
           onHide={handleClose}
+          restoreFocus={false}
         >
-          <Offcanvas.Header closeButton className="p-4">
+          <Offcanvas.Header closeButton closeVariant="white" className="p-4">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`} className="text-black"></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="mt-5 mt-md-0">

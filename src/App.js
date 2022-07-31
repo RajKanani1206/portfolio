@@ -5,10 +5,8 @@ import Home from "./components/HomeBanner";
 const App = () => {
   return (
     <>
-      <div className="main-banner">
-        <Header />
-        <Home />
-      </div>
+      <Header />
+      <Home />
     </>
   );
 };
