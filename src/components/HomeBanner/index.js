@@ -17,7 +17,7 @@ const Home = () => {
             <div className="social-links d-none d-md-inline">
               <ul className="list-unstyled">
                 {socialItems.map((item, index) => (
-                  <li className="my-4">
+                  <li className="my-4" key={index}>
                     <a href={item.link}>
                       <img src={item.src} alt="icon" height={40} width={40} />
                     </a>

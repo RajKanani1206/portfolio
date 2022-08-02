@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
+import socialItems from "../HomeBanner/socialItems";
 import "./style.css";
 
 const Header = () => {
@@ -28,15 +29,26 @@ const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body className="mt-5 mt-md-0">
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <a href="#a" className="text-decoration-none menu-items mx-4 my-3 my-md-0" onClick={handleClose}>
+              <a href="#about" className="text-decoration-none menu-items mx-4 my-3 my-md-0" onClick={handleClose}>
                 About Me
               </a>
-              <a href="#d" className="text-decoration-none menu-items mx-4 my-3 my-md-0" onClick={handleClose}>
+              <a href="#skills" className="text-decoration-none menu-items mx-4 my-3 my-md-0" onClick={handleClose}>
                 Skills
               </a>
-              <a href="#d" className="text-decoration-none menu-items mx-4 my-3 my-md-0" onClick={handleClose}>
+              <a href="#projects" className="text-decoration-none menu-items mx-4 my-3 my-md-0" onClick={handleClose}>
                 My Work
               </a>
+              <div className="social-links d-md-none">
+                <ul className="list-unstyled mx-4 mt-5">
+                  {socialItems.map((item, index) => (
+                    <li className="d-inline-block my-4 px-1" key={index}>
+                      <a href={item.link}>
+                        <img src={item.src} alt="icon" height={40} width={40} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
