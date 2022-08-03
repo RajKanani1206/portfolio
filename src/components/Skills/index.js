@@ -8,7 +8,7 @@ const Skills = () => {
     <div className="skills-section py-5" id="skills">
       <h1 className="heading mb-5 text-center">Skills</h1>
       <Container>
-        <div className="row mx-5">
+        <div className="row">
           {skillItems.map((skill, index) => (
             <div className="col-md-6" key={index}>
               <div className="skill-item mb-4 p-5">
