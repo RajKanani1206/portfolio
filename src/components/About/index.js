@@ -5,7 +5,7 @@ import "./style.css";
 const About = () => {
   return (
     <div className="about-section text-center text-black my-5" id="about">
-      <h1 className="about-heading mb-5">About Me</h1>
+      <h1 className="heading mb-5">About Me</h1>
       <Container>
         <div className="about-content d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="col-left mb-4 mb-md-0">
