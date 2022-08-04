@@ -1,0 +1,22 @@
+.footer-section {
+  background-color: #1c1d25 !important;
+}
+
+.social-link {
+  font-family: "League Spartan";
+  position: relative;
+}
+
+.social-link::after {
+  content: "";
+  position: absolute;
+  background-color: #f25757;
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+.social-link:hover::after {
+  width: 100%;
+}
