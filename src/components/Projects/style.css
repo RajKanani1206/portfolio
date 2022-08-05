@@ -1,0 +1,126 @@
+.project-content {
+  margin-bottom: 100px;
+  width: 80%;
+  height: 480px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  transition: all 0.35s ease;
+  box-shadow: 0 20px 80px 0 rgb(0 0 0 / 65%);
+  cursor: pointer;
+}
+
+.project-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #1c1d25;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.project-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.project-mask::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background: linear-gradient(270deg, rgba(35, 90, 166, 0.9), rgba(16, 27, 59, 0.9));
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s, opacity 0.2s,
+    -webkit-transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s;
+  z-index: 9;
+}
+
+.project-content:hover .project-mask::after {
+  transform: translateX(0);
+}
+
+.project-text {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  color: #fff;
+  z-index: 10;
+  opacity: 1;
+  max-width: 550px;
+  transform: scale(1) translateX(0);
+  transition: transform 0.45s, opacity 0.25s, -webkit-transform 0.45s;
+}
+
+.project-content:hover .project-text {
+  transform: scale(1.05);
+}
+
+.project-text h3 {
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-size: 2.8em;
+}
+.project-text h5 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.project-links li a img {
+  filter: invert(57%) sepia(51%) saturate(3660%) hue-rotate(325deg) brightness(95%) contrast(101%);
+}
+
+.project-bg-img-1 {
+  background-image: url(../../../public/images/project-1.jpg);
+}
+
+@media (max-width: 899px) {
+  .project-content {
+    height: 420px;
+    width: 90%;
+  }
+  .project-text h3 {
+    font-size: 1.9em;
+  }
+}
+
+@media (max-width: 659px) {
+  .project-content {
+    height: 340px;
+  }
+  .project-text {
+    left: 45px;
+    bottom: 60px;
+  }
+  .project-text h3 {
+    font-size: 1.4em;
+  }
+  .project-text h5 {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-content {
+    height: 290px;
+  }
+  .project-text {
+    left: 25px;
+    bottom: 50px;
+  }
+  .project-text h3 {
+    font-size: 1.125em;
+  }
+}
