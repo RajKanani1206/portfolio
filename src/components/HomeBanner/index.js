@@ -5,7 +5,7 @@ import "./style.css";
 
 const Home = () => {
   return (
-    <div className="main-banner">
+    <div className="main-banner" id="home">
       <img src="images/logo.svg" alt="Logo" className="banner-img" />
       <div className="inner-banner min-vh-100">
         <Container className="banner-container">
@@ -18,7 +18,7 @@ const Home = () => {
               <ul className="list-unstyled">
                 {socialItems.map((item, index) => (
                   <li className="my-4" key={index}>
-                    <a href={item.link}>
+                    <a href={item.link} target="_blank" rel="noreferrer">
                       <img src={item.src} alt="icon" height={40} width={40} />
                     </a>
                   </li>
