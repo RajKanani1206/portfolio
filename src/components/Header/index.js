@@ -12,7 +12,9 @@ const Header = () => {
     <Navbar expand="md" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand className="d-flex align-items-center">
-          <img alt="Logo" src="images/logo-white.svg" width="60" height="60" className="d-inline-block logo-img" />
+          <a href="#home">
+            <img alt="Logo" src="images/logo-white.svg" width="60" height="60" className="d-inline-block logo-img" />
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} className="menu-button" onClick={handleShow} />
         <Navbar.Offcanvas
@@ -42,7 +44,7 @@ const Header = () => {
                 <ul className="list-unstyled mx-4 mt-5">
                   {socialItems.map((item, index) => (
                     <li className="d-inline-block my-4 px-1" key={index}>
-                      <a href={item.link}>
+                      <a href={item.link} target="_blank" rel="noreferrer">
                         <img src={item.src} alt="icon" height={40} width={40} />
                       </a>
                     </li>

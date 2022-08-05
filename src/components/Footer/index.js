@@ -12,7 +12,13 @@ const Footer = () => {
         </div>
         <div className="d-flex justify-content-center my-4">
           {socialItems.map((item, index) => (
-            <a href={item.link} key={index} className="text-decoration-none text-white mx-4 social-link">
+            <a
+              href={item.link}
+              key={index}
+              className="text-decoration-none text-white mx-4 social-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               {item.name}
             </a>
           ))}

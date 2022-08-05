@@ -17,9 +17,11 @@ const About = () => {
               contributing to open source projects. I have worked mostly with ReactJS. Checkout my work below and feel
               free to get in touch with me if you have some interesting projects.
             </p>
-            <Button variant="plain-text" className="text-white border-0">
-              Resume
-            </Button>
+            <form method="get" action="Raj-Resume.pdf" target="_blank">
+              <Button variant="plain-text" className="text-white border-0" type="submit">
+                Resume
+              </Button>
+            </form>
           </div>
         </div>
       </Container>
