@@ -82,8 +82,12 @@
   filter: invert(57%) sepia(51%) saturate(3660%) hue-rotate(325deg) brightness(95%) contrast(101%);
 }
 
+.project-bg-img-2 {
+  background-image: url(../../../public/images/project-1.png);
+}
+
 .project-bg-img-1 {
-  background-image: url(../../../public/images/project-1.jpg);
+  background-image: url(../../../public/images/project-2.jpg);
 }
 
 @media (max-width: 899px) {
