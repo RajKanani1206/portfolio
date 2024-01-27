@@ -13,9 +13,18 @@ const About = () => {
           </div>
           <div className="col-right text-start p-4 p-md-0">
             <p className="font-monospace fst-italic">
-              I am a Software Developer specializing in Front-End who likes to build blazing fast websites. I love
-              contributing to open source projects. I have worked mostly with ReactJS. Checkout my work below and feel
-              free to get in touch with me if you have some interesting projects.
+              I am a Computer Science graduate student at Frankfurt University of Applied Sciences, expected to graduate
+              in March 2025. As an experienced Full Stack Developer with a focus on frontend technologies, I specialise
+              in React JS, Next.js, TypeScript, Node.js, SQL, and GraphQL.
+            </p>
+            <p className="font-monospace fst-italic">
+              As a lifelong learner, I am currently immersed in the field of Data Science. Proficient in Python, NumPy,
+              Pandas, Matplotlib and Seaborn, I am enthusiastic about leveraging data to derive meaningful insights and
+              create impactful visualizations.
+            </p>
+            <p className="font-monospace fst-italic">
+              If you're looking to blend frontend creativity with analytical depth, I'd love to meet with you and
+              discuss how my skills might be of assistance.
             </p>
             <form method="get" action="Raj-Resume.pdf" target="_blank">
               <Button variant="plain-text" className="text-white border-0" type="submit">

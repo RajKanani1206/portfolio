@@ -16,16 +16,20 @@ const Projects = () => {
               <h5>{project.subTitle}</h5>
               <div className="project-links mt-3">
                 <ul className="list-unstyled">
-                  <li className="d-inline-block px-1">
-                    <a href={project.webLink} target="_blank" rel="noreferrer">
-                      <img src="images/icon-web.svg" alt="icon" height={40} width={40} />
-                    </a>
-                  </li>
-                  <li className="d-inline-block px-1">
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <img src="images/icon-github.svg" alt="icon" height={40} width={40} />
-                    </a>
-                  </li>
+                  {project.webLink && (
+                    <li className="d-inline-block px-1">
+                      <a href={project.webLink} target="_blank" rel="noreferrer">
+                        <img src="images/icon-web.svg" alt="icon" height={40} width={40} />
+                      </a>
+                    </li>
+                  )}
+                  {project.githubLink && (
+                    <li className="d-inline-block px-1">
+                      <a href={project.githubLink} target="_blank" rel="noreferrer">
+                        <img src="images/icon-github.svg" alt="icon" height={40} width={40} />
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>

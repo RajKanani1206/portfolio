@@ -83,11 +83,15 @@
 }
 
 .project-bg-img-1 {
-  background-image: url(../../../public/images/project-1.png);
+  background-image: url(../../../public/images/project-1.jpg);
 }
 
 .project-bg-img-2 {
-  background-image: url(../../../public/images/project-2.jpg);
+  background-image: url(../../../public/images/project-2.png);
+}
+
+.project-bg-img-3 {
+  background-image: url(../../../public/images/project-3.jpg);
 }
 
 @media (max-width: 899px) {

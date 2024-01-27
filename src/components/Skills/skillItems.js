@@ -1,19 +1,19 @@
 // eslint-disable-next-line
 export default [
   {
-    title: "Web",
-    description: "ReactJS, NextJS and TypeScript",
+    title: "Programming Languages and Databases",
+    description: "C/C++, JavaScript, TypeScript, Python, PostgreSQL, MongoDB",
   },
   {
-    title: "Programming",
-    description: "C/C++, JavaScript",
+    title: "Web",
+    description: "ReactJS, NextJS, NodeJS, Express, SQL, GraphQL",
+  },
+  {
+    title: "Data Analytics and Visualization",
+    description: "NumPy, Pandas, Matplotlib, Seaborn, PowerBI, Tableau",
   },
   {
     title: "Utilities & Software",
-    description: "Git, Lodash, Jira and Asana",
-  },
-  {
-    title: "Others",
-    description: "Management and Volleyball (Sport)",
+    description: "Git/Github, Visual Studio Code, Postman, JIRA, Asana, MailChimp, Prismic",
   },
 ];
